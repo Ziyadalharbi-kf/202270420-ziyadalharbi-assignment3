@@ -1,15 +1,16 @@
-# AI Usage Report - Assignment 2
+# AI Usage Report - Assignment 3
 
 ## Tools Used & Use Cases
-- **Gemini (Google):** Used strictly as a debugging assistant to troubleshoot JavaScript errors and fix minor CSS formatting issues while adding interactivity.
+- **Gemini (Google):** Used as a debugging assistant to troubleshoot asynchronous JavaScript (`async/await`) and to help refine Regular Expressions for form validation.
 
 ## Specific Implementations
-1. **Troubleshooting JavaScript:** While writing the logic for the dark mode toggle and form validation, my event listeners were occasionally failing to trigger. I used AI to help spot syntax errors (like missing brackets) and figure out why certain variables were returning 'null'.
-2. **Fixing CSS Variables:** I encountered a bug where my CSS `:root` variables weren't applying smoothly when the theme switched. I used AI to diagnose the transition error and correct my CSS syntax.
+1. **Troubleshooting API Fetch:** I was encountering errors when trying to pull data from the GitHub API. I used AI to help me understand how to properly structure the `try/catch` block and format the response as JSON so it would display correctly in the DOM.
+2. **Regex Debugging:** Writing the exact string of characters to validate an email address is tricky. I used AI to explain how the `/^[^\s@]+@[^\s@]+\.[^\s@]+$/` pattern works to ensure the user includes an '@' and a domain extension.
+3. **Performance Tips:** I asked the AI for quick ways to improve page load speed without changing my entire structure, and it suggested using the `defer` attribute on my script tag.
 
 ## Benefits & Challenges
-- **Benefits:** The AI was incredibly helpful for quickly spotting typos and minor logic bugs that are hard to see after staring at the screen for a long time. It saved me hours of frustration.
-- **Challenges:** Occasionally, the AI would try to rewrite my entire function to fix one small bug. The challenge was ignoring the total rewrites and only extracting the specific line or correction needed to fix my own code.
+- **Benefits:** The AI was excellent for explaining complex concepts like `Promises` and `Regex` in plain English, which saved me from having to read through dense documentation just to fix a minor bug.
+- **Challenges:** The AI sometimes provided overly complex solutions (like suggesting I use external libraries). I had to refine my prompts to force it to use basic, vanilla JavaScript to meet the assignment requirements.
 
 ## Responsible Use & Modifications
-I wrote the core HTML structure, CSS layouts, and JavaScript logic myself. I only prompted the AI with specific snippets of broken code to ask, "Why isn't this event listener working?" I made sure I understood the root cause of the error before applying the specific fix to my files.
+I built the structure and wrote the core functionality myself. I only utilized AI to verify my syntax, explain why a specific piece of code was failing, and suggest minor optimization tweaks. I ensured I fully understood the `fetch` workflow before implementing the API integration into my final project.
